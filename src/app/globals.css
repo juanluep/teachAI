@@ -1,26 +1,67 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@theme {
+  --color-on-error-container: #93000a;
+  --color-error-container: #ffdad6;
+  --color-surface-container-lowest: #ffffff;
+  --color-tertiary-container: #c24100;
+  --color-on-tertiary-fixed-variant: #812900;
+  --color-tertiary-fixed: #ffdbcf;
+  --color-background: #f7f9fc;
+  --color-on-surface: #191c1e;
+  --color-tertiary: #993100;
+  --color-surface-container-high: #e6e8eb;
+  --color-surface-container-low: #f2f4f7;
+  --color-on-secondary-fixed: #001355;
+  --color-primary-fixed-dim: #b8c3ff;
+  --color-secondary: #4959a3;
+  --color-inverse-on-surface: #eff1f4;
+  --color-secondary-fixed-dim: #b8c3ff;
+  --color-surface-bright: #f7f9fc;
+  --color-inverse-surface: #2d3133;
+  --color-on-primary-container: #efefff;
+  --color-error: #ba1a1a;
+  --color-surface: #f7f9fc;
+  --color-on-secondary-fixed-variant: #30418a;
+  --color-primary: #0040df;
+  --color-secondary-container: #9fafff;
+  --color-on-primary: #ffffff;
+  --color-on-primary-fixed: #001355;
+  --color-on-tertiary-container: #ffece6;
+  --color-tertiary-fixed-dim: #ffb59b;
+  --color-secondary-fixed: #dde1ff;
+  --color-outline: #747688;
+  --color-on-surface-variant: #434656;
+  --color-on-tertiary: #ffffff;
+  --color-surface-container: #eceef1;
+  --color-primary-fixed: #dde1ff;
+  --color-surface-dim: #d8dadd;
+  --color-surface-tint: #104af0;
+  --color-on-tertiary-fixed: #380d00;
+  --color-primary-container: #2d5bff;
+  --color-on-error: #ffffff;
+  --color-on-background: #191c1e;
+  --color-surface-container-highest: #e0e3e6;
+  --color-outline-variant: #c4c5d9;
+  --color-on-primary-fixed-variant: #0035bd;
+  --color-inverse-primary: #b8c3ff;
+  --color-on-secondary-container: #2e4088;
+  --color-on-secondary: #ffffff;
+  --color-surface-variant: #e0e3e6;
+
+  --font-headline: var(--font-plus-jakarta), sans-serif;
+  --font-body: var(--font-manrope), sans-serif;
+  --font-label: var(--font-manrope), sans-serif;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
 }
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+.tonal-shift-no-border {
+  border: none !important;
 }
-
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+.glass-morphism {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
 }
